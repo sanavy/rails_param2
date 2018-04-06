@@ -30,7 +30,7 @@ It has all the features of the sinatra-param gem, I used bang methods (like para
 As usual, in your Gemfile...
 
 ``` ruby
-  gem 'rails_param'
+gem 'rails_param', git: 'git@github.com:shhavel/rails_param.git', branch: 'stable'
 ```
 
 ## Example
