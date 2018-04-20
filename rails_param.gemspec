@@ -4,11 +4,11 @@ $:.unshift lib unless $:.include?(lib)
 require 'rails_param/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'rails_param'
+  s.name        = 'rails_param2'
   s.version     = RailsParam::VERSION
   s.authors     = ["Nicolas Blanco"]
   s.email       = 'nicolas@nicolasblanco.fr'
-  s.homepage    = 'http://github.com/nicolasblanco/rails_param'
+  s.homepage    = 'http://github.com/sanavy/rails_param2'
   s.license     = 'MIT'
 
   s.description = %q{

@@ -1,7 +1,6 @@
-# rails-param
-_Parameter Validation & Type Coercion for Rails_
+# rails_param2 [![Build Status](https://travis-ci.com/sanavy/rails_param2.svg?branch=master)](https://travis-ci.com/sanavy/rails_param2)
 
-[![Build Status](https://travis-ci.org/nicolasblanco/rails_param.svg?branch=master)](https://travis-ci.org/nicolasblanco/rails_param)
+_Parameter Validation & Type Coercion for Rails_ (forked from [nicolasblanco/rails_param](https://github.com/nicolasblanco/rails_param))
 
 ## Introduction
 
@@ -30,7 +29,7 @@ It has all the features of the sinatra-param gem, I used bang methods (like para
 As usual, in your Gemfile...
 
 ``` ruby
-gem 'rails_param', git: 'git@github.com:shhavel/rails_param.git', branch: 'stable'
+gem 'rails_param2'
 ```
 
 ## Example
