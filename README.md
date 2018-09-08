@@ -135,6 +135,19 @@ param! :books_array, Array, required: true  do |b|
 end
 ```
 
+### Rename parameters
+
+Rename parameter `params[:question_set][:sections]` to `params[:question_set][:sections_attributes]` and
+then rename parameter `params[:question_set][:sections_attributes][0][:delete]` to `params[:question_set][:sections_attributes][0][:_destroy]`
+
+```ruby
+param! :question_set, Hash, required: true do |qs|
+  qs.param! :sections, Array, default: [], rename_to: :sections_attributes do |sc|
+    sc.param! :delete, :boolean, rename_to: :_destroy
+  end
+end
+```
+
 ## Thank you
 
 Many thanks to:

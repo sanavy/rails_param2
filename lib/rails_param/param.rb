@@ -53,6 +53,13 @@ module RailsParam
             recurse params[name], &block
           end
         end
+
+        # rename
+        if params[name] && options[:rename_to]
+          params[options[:rename_to]] = params.delete(name)
+          name = options[:rename_to]
+        end
+
         params[name]
 
       rescue InvalidParameterError => exception
